@@ -13,4 +13,7 @@ sed -i 's#"postScriptLocation" : ""#"postScriptLocation" : "'"$SCRIPT_LOCATION"'
 
 chmod 700 $SCRIPT_LOCATION/pre-mysql-backup.sh
 chmod 700 $SCRIPT_LOCATION/post-mysql-backup.sh
+chmod 700 $SCRIPT_LOCATION/mysql-app-consistent-backup-env.sh
+chmod 700 $SCRIPT_LOCATION/mysql-app-consistent-backup-funcs.sh
+chmod 700 $SCRIPT_LOCATION/mysql-app-consistent-backup.sh
 chmod 600 $SCRIPT_LOCATION/VMSnapshotScriptPluginConfig.json
