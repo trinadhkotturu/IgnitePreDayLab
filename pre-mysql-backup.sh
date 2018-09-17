@@ -7,4 +7,4 @@
 # 
 # PRE wrapper script for MySQL consistent Azure Linux VMs backups
 
-/bin/bash /opt/capside/azure/mysql-app-consistent-backup.sh pre
+/bin/bash /etc/azure/mysql-app-consistent-backup.sh pre
