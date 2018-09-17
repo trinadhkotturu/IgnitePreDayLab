@@ -9,7 +9,7 @@
 
 # Folders and files
 
-BASE_FOLDER="/opt/capside/azure"
+BASE_FOLDER="/etc/azure"
 DUMPS_FOLDER="${BASE_FOLDER}/dumps"
 LOGS_FOLDER="${BASE_FOLDER}/logs"
 
