@@ -8,7 +8,7 @@
 # Main script for PRE/POST actions for MySQL consistent Azure Linux VMs backups
 
 # Default PATH
-export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/capside/azure"
+export PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/etc/azure"
 
 # Only root can execute this script
 USER_ID="$(id -u)"
@@ -18,7 +18,7 @@ if [[ ${USER_ID} -ne 0 ]]; then
 fi
 
 # Load the custom variables and helper functions
-for source_file in /opt/capside/azure/mysql-app-consistent-backup-env.sh /opt/capside/azure/mysql-app-consistent-backup-funcs.sh; do
+for source_file in /etc/azure/mysql-app-consistent-backup-env.sh /etc/azure/mysql-app-consistent-backup-funcs.sh; do
 
     if [[ -r ${source_file} ]]; then
         source ${source_file}
